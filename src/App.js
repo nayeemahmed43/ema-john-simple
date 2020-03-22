@@ -33,7 +33,7 @@ function App() {
               <Review></Review>
           </Route>
 
-          <Route path="/inventory">
+          <Route path="/orders">
               <Inventory></Inventory>
           </Route>
 
