@@ -1,12 +1,11 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Shop from './components/Header/Shop/Shop';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Review from './components/Review/Review';
 import Inventory from './components/Inventory/Inventory';
@@ -33,7 +32,7 @@ function App() {
               <Review></Review>
           </Route>
 
-          <Route path="/orders">
+          <Route path="/inventory">
               <Inventory></Inventory>
           </Route>
 
