@@ -19,7 +19,7 @@ const Review = () => {
             const savedCart = getDatabaseCart();
             const productKeys = Object.keys(savedCart);
 
-            fetch('http://localhost:4200/getProductsByKey', {
+            fetch('https://intense-wildwood-44845.herokuapp.com/getProductsByKey', {
                 method: 'POST', 
                 headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const Review = () => {
                     <Link to="shipment">
                         {
                             auth.user ?
-                            <button className="main-button">Proceed To Shipment</button>
+                            <button className="main-button">Proceed Checkout</button>
                             :
                             <button className="main-button">Login To Proceed</button>
                         }
